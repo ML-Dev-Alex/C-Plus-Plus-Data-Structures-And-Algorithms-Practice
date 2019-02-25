@@ -64,5 +64,6 @@ int main(int argc, char** argv){
     cout << "Faster Result 8 = " << recursive2(8) << endl;
     cout << "Faster Result 9 = " << recursive2(9) << endl;
     cout << "Faster Result 10 = " << recursive2(10) << endl;
+    return 0;
 }
 

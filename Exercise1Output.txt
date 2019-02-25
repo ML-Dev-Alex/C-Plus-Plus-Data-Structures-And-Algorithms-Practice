@@ -1,0 +1,10 @@
+Result 1 = 1
+Result 2 = 2
+Result 3 = 3
+Result 4 = 5
+Result 5 = 8
+Faster Result 6 13
+Faster Result 7 = 21
+Faster Result 8 = 34
+Faster Result 9 = 55
+Faster Result 10 = 89

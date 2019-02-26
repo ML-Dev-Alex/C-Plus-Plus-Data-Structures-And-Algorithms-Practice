@@ -1,2 +1,1 @@
-# C-Plus-Plus-Practice
-C++ practice, mostly data structures and algorithms.
+# Data Structures and Algorithms practice with C++

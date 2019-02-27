@@ -1,0 +1,14 @@
+Starting from first node: 
+Index: 1 = 10
+Index: 2 = 20
+Index: 3 = 30
+Index: 4 = 40
+Starting from last node: 
+Index: 4 = 40
+Index: 3 = 30
+Index: 2 = 20
+Index: 1 = 10
+Look for node 3:
+Node found! Index: 3, value: 30.
+Now look for node 9 (not on the list):
+Not on list!

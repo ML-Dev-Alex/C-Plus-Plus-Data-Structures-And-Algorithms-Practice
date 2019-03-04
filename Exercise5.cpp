@@ -159,15 +159,15 @@ void Heap::MaxHeapify(int i){
     }
 }
 
-// Starts by adding the first number to the lowers bucket, after that if the number is smaller than the biggest number on lowers
-// Adds it to the lowers bucket, otherwise add it to the highers bucket
+// Starts by adding the first number to the lowers heap, after that, if the number is smaller than the biggest number on lowers
+// we add it to the lowers heap, otherwise we add it to the highers heap
 void addNumber(int number, Heap &lowers, Heap &highers){
     if (lowers.getHeapSize() == 0 || number < lowers.getMinOrMax()) lowers.insertKeyMax(number);
     else highers.insertKeyMin(number);
 }
 
-// If there are ever 2 more items in one bucket, reorganize them, taking either biggest item on the lowers and putting it on highers
-// or the smallest item on highest and putting it on lowers
+// If there are ever 2 or more items in one heap, reorganize them, taking either the biggest item on the lowers heap
+// and putting it on highers or the smallest item on highest and putting it on lowers
 void rebalance(Heap &lowers, Heap &highers){
     if (lowers.getHeapSize() > highers.getHeapSize() && (lowers.getHeapSize() - highers.getHeapSize()) >= 2)
         highers.insertKeyMin(lowers.extractMax());
@@ -175,8 +175,9 @@ void rebalance(Heap &lowers, Heap &highers){
         lowers.insertKeyMax(highers.extractMin());
 }
 
-// if there are more items on one heap this means that it the median of the whole array
-// if there are the same amount, take the highest number on lowers and the smallest on highers and return their mean
+// if there are more items in either heap, it means that that heap's head is the median of the whole array
+// if there are the same amount of numbers on both heaps, we take the highest number on lowers and the
+// smallest on highers and return their mean.
 float getMedian(Heap &lowers, Heap &highers){
     if (lowers.getHeapSize() > highers.getHeapSize()) return lowers.getMinOrMax();
     else if (lowers.getHeapSize() < highers.getHeapSize()) return highers.getMinOrMax();

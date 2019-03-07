@@ -1,0 +1,3 @@
+Assigning lecture... Number of classrooms required so far: 1
+Assigning lecture... Number of classrooms required so far: 2
+Assigning lecture... Number of classrooms required so far: 2
